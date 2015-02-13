@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="bottom" >
+
+    <ImageButton
+        android:id="@+id/moveleftButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/movebackwordButton"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_moveleft" />
+
+    <ImageButton
+        android:id="@+id/moverightButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/movebackwordButton"
+        android:layout_toRightOf="@+id/movebackwordButton"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_moveright" />
+
+    <ImageButton
+        android:id="@+id/movebackwordButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="left"
+        android:layout_toRightOf="@id/moveleftButton"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_movebackword" />
+
+    <ImageButton
+        android:id="@+id/rotaterightButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/landingButton"
+        android:layout_alignParentRight="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_rotate_right" />
+
+    <ImageButton
+        android:id="@+id/takeoffButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/rotaterightButton"
+        android:layout_toLeftOf="@id/rotaterightButton"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_takeoff" />
+
+    <ImageButton
+        android:id="@+id/landingButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/rotaterightButton"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_landing" />
+
+    <ImageButton
+        android:id="@+id/rotateleftButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/landingButton"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/takeoffButton"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_rotate_left" />
+
+    <ImageButton
+        android:id="@+id/moveforwardButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/moveleftButton"
+        android:layout_alignLeft="@+id/movebackwordButton"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_moveforward" />
+
+    <ImageButton
+        android:id="@+id/powerButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_power" />
+
+    <ImageButton
+        android:id="@+id/bluetoothButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rotateleftButton"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_connect_bluetooth" />
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Command:"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/bluetooth_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/log"
+        android:text="Bluetooth:"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bluetooth_state"
+        android:text="State:"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
